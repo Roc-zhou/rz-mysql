@@ -1,5 +1,10 @@
 # 基于node的 mysql方法封装接口
 
+> [rz-mysql](http://npmjs.com/package/rz-mysql)
+
+> mysql ^2.17.1
+
+> node v10.0.0
 ### 安装
 ```js
 npm install --save rz-mysql or yarn add rz-mysql
