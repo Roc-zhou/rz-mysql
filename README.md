@@ -22,7 +22,10 @@ const config = {
 	database: "" // 要访问的数据库
 }
 
-const query = new Query(config) // 返回的是一个 promise
+const query = new Query(config) 
+
+query.sql(sql,val=[]) // 使用方法 sql 必传，返回 promise
+
 
 const m = async () => {
   const s = await query.sql(`SELECT * from user`);

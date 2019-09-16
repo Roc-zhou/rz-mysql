@@ -22,7 +22,7 @@ module.exports = (config) => {
   return new Promise((resolve, reject) => {
     pool.getConnection((err, conn) => {
       if (err) {
-        console.log(" Database Connection Failed !");
+        console.log("Database Connection Failed !");
         reject(err)
       } else {
         console.log("Database Connection Success !");
