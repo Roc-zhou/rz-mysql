@@ -1,0 +1,27 @@
+{
+  "name": "rz-mysql",
+  "version": "1.0.0",
+  "description": "nodeJs mysql 方法封装",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roc-zhou/rz-mysql.git"
+  },
+  "keywords": [
+    "nodejs",
+    "nodejs-mysql",
+    "mysql"
+  ],
+  "author": "Roc-zhou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roc-zhou/rz-mysql/issues"
+  },
+  "homepage": "https://github.com/Roc-zhou/rz-mysql#readme",
+  "dependencies": {
+    "mysql": "^2.17.1"
+  }
+}
