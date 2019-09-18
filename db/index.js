@@ -1,11 +1,16 @@
 const mysql = require("mysql");
 module.exports = (config) => {
+
+  if (!config.database) {
+    throw 'database is required'
+  }
+
   // 创建 mysql 连接池并配置参数
   const pool = mysql.createPool({
-    host: config.host, // 主机地址
-    port: config.port, // 端口
-    user: config.user, // 数据库访问账号
-    password: config.password, // 数据库访问密码
+    host: config.host || '127.0.0.1', // 主机地址
+    port: config.port || 3306, // 端口
+    user: config.user || "root", // 数据库访问账号
+    password: config.password || "123456", // 数据库访问密码
     database: config.database, // 要访问的数据库
     charset: config.charset || "UTF8_GENERAL_CI", // 字符编码 ( 必须大写 )
     typeCast: config.typeCast || true, // 是否把结果值转换为原生的 javascript 类型

@@ -37,10 +37,10 @@ m()
 ### config 可配置项
 ```js
 const config = {
-  host, // 必填 主机地址
-  port, // 必填 端口
-  user, // 必填 数据库访问账号
-  password, // 必填 数据库访问密码
+  host, // 主机地址 default 127.0.0.1
+  port, // 端口 default 3306
+  user, // 数据库访问账号 default root 
+  password, // 数据库访问密码 default 123456
   database, // 必填 要访问的数据库
   charset, // 字符编码 ( 必须大写 ) 默认 UTF8_GENERAL_CI
   typeCast, // 是否把结果值转换为原生的 javascript 类型 默认 true
