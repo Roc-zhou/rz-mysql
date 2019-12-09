@@ -13,6 +13,7 @@ class Query {
     await new Promise((resolve, reject) => {
       conn.beginTransaction(err => {
         if (err) {
+          console.log(err);
           reject(err)
         } else {
           resolve()
@@ -36,6 +37,7 @@ class Query {
     await new Promise((resolve, reject) => {
       conn.commit(err => {
         if (err) {
+          console.log(err);
           reject(err);
         } else {
           resolve();

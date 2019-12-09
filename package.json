@@ -1,6 +1,6 @@
 {
   "name": "rz-mysql",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "nodeJs mysql 方法封装",
   "main": "app.js",
   "scripts": {
