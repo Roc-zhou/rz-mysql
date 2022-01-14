@@ -1,11 +1,9 @@
 const mysql = require('./db');
 
-
 class Query {
   constructor(config) {
     this.config = config;
   }
-
   async sql(sql, values) {
     // 获取连接
     let conn = await mysql(this.config);
